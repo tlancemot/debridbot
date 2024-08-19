@@ -1,0 +1,7 @@
+services:
+  debridbot:
+    build: .
+    container_name: debridbot
+    restart: unless-stopped
+    env_file:
+     - .env
